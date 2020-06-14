@@ -127,6 +127,8 @@ nav li:hover {
   top: 70px;
   display: flex;
   justify-content: space-around;
+  background: #414141;
+  color: white;
 }
 .aboutImage {
   display: flex;
@@ -139,6 +141,8 @@ nav li:hover {
 }
 #bitmoji {
   height: 350px;
+  border-radius: 175px;
+  margin: 20px 0;
 }
 .bio {
   display: flex;
@@ -160,7 +164,7 @@ nav li:hover {
 .form {
   margin-top: 50px;
   transition: all 4s ease-in-out;
-  }
+}
 .form-control {
   width: 600px;
   background: transparent;
@@ -170,11 +174,10 @@ nav li:hover {
   color: #414141;
   font-size: 18px;
   margin bottom: 16px;
-  }  
-  
+}  
 input {
   height: 45px;
-  }
+}
 form .submit{
   background: red;
   border-color:transparent;
@@ -182,17 +185,17 @@ form .submit{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  height: 50pz;
+  height: 50px;
   margin-top: 20px;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
-  }
+}
 form .submit:hover{
   	position: relative;
     background-color: firebrick;
     cursor: pointer;
-    top: 2px;
-    }
-    /*footer*/
+    top: 4px;
+}
+/*footer*/
 #content-wrap {
 	padding-bottom: 3rem;
 }
