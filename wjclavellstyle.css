@@ -122,7 +122,7 @@ nav li:hover {
 }
 
 /*About Me*/
-.aboutMe {
+#aboutMe {
   position: relative;
   top: 70px;
   display: flex;
