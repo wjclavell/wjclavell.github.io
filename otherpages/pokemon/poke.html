@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Pokemon Battle</title>
+  </head>
+  <body>
+    <div>
+      <img
+        class="logo"
+        src="https://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png"
+      />
+    </div>
+    <button onClick="playGame()" id="start">START GAME</button>
+
+    <section class="pokemon"></section>
+
+    <section class="endgames">
+      <div class="win">
+        <h1>YOU WIN!<br />🤗</h1>
+        <h3></h3>
+        <button onclick="restart()" class="restart">TRY AGAIN</button>
+      </div>
+      <div class="lose">
+        <h1>YOU LOSE!<br />😥</h1>
+        <h3></h3>
+        <button onclick="restart()" class="restart">TRY AGAIN</button>
+      </div>
+    </section>
+    <section class="arena">
+      <div class="computer"></div>
+      <div class="player"></div>
+    </section>
+
+    <ul class="attacks-list"></ul>
+
+    <audio src="assets/115-battle (vs trainer).mp3" loop></audio>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="constructor.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

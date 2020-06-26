@@ -1,0 +1,214 @@
+body {
+  background-color: white;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #003060;
+  font-size: 16px;
+}
+/*Main Menu*/
+#start {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  padding: 0 40px;
+  background: lightblue;
+  border: 3px solid #003060;
+  border-radius: 40px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  position: relative;
+  top: 45px;
+}
+#start:hover {
+  background: #003060;
+  color: white;
+  box-shadow: none;
+}
+.logo {
+  height: 150px;
+}
+span {
+  font-family: "Wendy One", sans-serif;
+  font-size: 25px;
+  margin-right: 5px;
+  color: #ffcc00;
+  text-shadow: 3px 3px 0 navy, -1px -1px 0 navy, 1px -1px 0 navy,
+    -1px 1px 0 navy, 1px 1px 0 navy;
+}
+
+/*Pokemon select screen*/
+.pokemon {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.3s ease all;
+}
+#instruction {
+  font-size: 2em;
+  display: block;
+}
+.poke-container {
+  width: 25%;
+  text-align: center;
+  padding: 25px 0;
+  cursor: pointer;
+}
+.poke-container img {
+  display: inline-block;
+  max-height: 125px;
+  margin-bottom: 13px;
+  transition: 0.3s ease all;
+}
+.poke-container h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  transition: 0.3s ease all;
+}
+.poke-container ul {
+  display: none;
+}
+.poke-container li {
+  list-style: none;
+  font-size: 1.2em;
+  width: 200px;
+}
+
+.poke-container:hover img {
+  transform: scale(1.4);
+  margin-bottom: 17px;
+}
+.poke-container:hover h2 {
+  font-size: 1.2em;
+}
+.poke-container:hover ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+.poke-container:hover li {
+  border: none;
+  align-self: center;
+  color: #414141;
+  padding: 5px;
+  background: rgba(50, 50, 50, 0.1);
+}
+
+/*Battle Arena*/
+/*.arena is the entire arena, .poke is each pokemon selected, .data is the health progress and name, .player is the player choice, .computer is the computer choice*/
+.arena {
+  background: #cfd0ec;
+  border: 10px dashed #003060;
+}
+.arena img {
+  height: 150px;
+}
+.arena .poke .data progress {
+  height: 2em;
+}
+.arena .computer img {
+  position: relative;
+  left: 25vw;
+  top: 10vh;
+}
+.arena .computer .data {
+  position: relative;
+  left: 25vw;
+  top: 10vh;
+}
+.arena .player img {
+  position: relative;
+  right: 25vw;
+  bottom: 10vh;
+}
+.arena .player .data {
+  position: relative;
+  right: 25vw;
+  bottom: 10vh;
+}
+
+/*Attack List*/
+.attacks-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fffafa;
+  position: initial;
+  transition: opacity 0.3s ease;
+  text-transform: capitalize;
+  height: 20vh;
+}
+li {
+  list-style: none;
+  font-size: 1.2em;
+  width: 40%;
+  text-align: center;
+  padding: 0;
+  margin: 3px 10px;
+  box-sizing: border-box;
+  background: lightblue;
+  border: 3px solid #003060;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+li:hover {
+  background: #003060;
+  color: white;
+  transform: scale(0.95);
+  border: none;
+}
+
+/* end result display */
+.endgames {
+  display: flex;
+  justify-content: space-around;
+}
+.endgames h1 {
+  font-family: "Wendy One", sans-serif;
+  font-size: 50px;
+  margin-right: 5px;
+  color: #ffcc00;
+  text-shadow: 3px 3px 0 navy, -1px -1px 0 navy, 1px -1px 0 navy,
+    -1px 1px 0 navy, 1px 1px 0 navy;
+}
+.endgames h3 {
+  line-height: 3em;
+  font-size: 1.5em;
+}
+.win {
+  display: none;
+  padding: 50px;
+  margin-top: 45px;
+  background: rgb(240, 240, 240);
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.lose {
+  display: none;
+  padding: 50px;
+  margin-top: 45px;
+  background: rgb(240, 240, 240);
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.restart {
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  padding: 0 40px;
+  background: lightblue;
+  border: 3px solid #003060;
+  border-radius: 40px;
+}
+.restart:hover {
+  background: #003060;
+  color: white;
+  box-shadow: none;
+}
