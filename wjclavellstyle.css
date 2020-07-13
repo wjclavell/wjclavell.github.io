@@ -95,12 +95,13 @@ nav li:hover {
 }
 .drop-content {
   display: none;
-  position: absolute;
-  top: 45px;
+  position: relative;
+  top: 20px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  transition: 2s ease;
 }
 .drop-content a {
   color: black;
@@ -216,12 +217,13 @@ form .submit:hover {
   background: #414141;
   z-index: 1;
 }
-#top {
+#back2top {
   text-decoration: none;
   color: white;
 }
-#top:hover {
+#back2top:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 #footer img {
   width: 30px;
