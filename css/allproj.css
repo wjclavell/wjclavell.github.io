@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Francois One", sans-serif;
+  background-color: #01185e;
+}
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  color: #00093c;
+  background-color: #eeeeee;
+  font-size: 3em;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: -0.5em 0 0.5em 0.5em #020516;
+  z-index: 2;
+}
+.logo > h1 {
+  font-size: 1rem;
+  letter-spacing: 0.5em;
+}
+.logo > a {
+  font-weight: 800;
+  color: #dd1010;
+}
+.logo img {
+  height: 1em;
+}
+/* All projects page*/
+.all-projects {
+  position: relative;
+  top: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #01185e;
+  margin-bottom: 5em;
+}
+.all-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em 3em;
+  color: white;
+}
+p {
+  max-width: 30vw;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.all-wrapper p {
+  margin: 0;
+}
+.all-wrapper h1 {
+  color: #01185e;
+  padding: 2px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px #dd1010;
+}
+.all-wrapper h1:hover {
+  color: white;
+  background-color: #dd1010;
+  box-shadow: none;
+}
+.all-img {
+  width: 30vw;
+  border: 5px solid #dd1010;
+  box-shadow: 0 0.5em 2em 5px #020516, 0 -0.5em 2em 5px #020516,
+    0.5em 0 2em 5px #020516, -0.5em 0 2em 5px #020516;
+  transition: 0.5s;
+}
+.all-img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0.5em 0 0.5em 0.5em #020516;
+}
+footer h1 {
+  font-size: 0.75em;
+  color: #00093c;
+}
+.icons i {
+  transform: scale(1.5);
+  color: #dd1010;
+  margin: 0 0.5em;
+}
+@media only screen and (max-width: 600px) {
+  .all-img {
+    box-shadow: 0 0.25em 1em 3px #020516, 0 -0.25em 1em 3px #020516,
+      0.25em 0 1em 3px #020516, -0.25em 0 1em 3px #020516;
+  }
+}

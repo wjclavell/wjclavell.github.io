@@ -1,0 +1,317 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* "W" William */
+.w {
+  grid-area: w;
+  display: grid;
+  grid-template-areas:
+    "w6 h1 h2 w7"
+    "w1 h1 h2 w5"
+    "w1 h1 h2 w5"
+    "w1 w11 w10 w5"
+    "w8 w2 w4 w9";
+  height: 50%;
+  width: 25%;
+  margin: 0.5em;
+  position: relative;
+  animation: reverse-side-swoop 4s ease-in-out;
+}
+.w1 {
+  grid-area: w1;
+  background-color: red;
+  box-shadow: 0.25em 0 white;
+}
+.w2 {
+  grid-area: w2;
+  background-color: red;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0.25em 0 white;
+}
+.w4 {
+  grid-area: w4;
+  background-color: red;
+  border-radius: 0 0 0 100%;
+}
+.w5 {
+  grid-area: w5;
+  background-color: red;
+  box-shadow: 0.25em 0 white;
+}
+.w6 {
+  grid-area: w6;
+  background-color: red;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.w7 {
+  grid-area: w7;
+  background-color: red;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.w8 {
+  grid-area: w8;
+  background-color: red;
+  border-radius: 0 0 0 100%;
+}
+.w9 {
+  grid-area: w9;
+  background-color: red;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0.25em 0 white;
+}
+.w10 {
+  grid-area: w10;
+  background-color: red;
+  border-radius: 0 100% 0 0;
+}
+.w11 {
+  grid-area: w11;
+  background-color: red;
+  border-radius: 100% 0 0 0;
+}
+.h1 {
+  grid-area: h1;
+}
+.h2 {
+  grid-area: h2;
+}
+
+/* "J" Joel */
+.j {
+  grid-area: j;
+  display: grid;
+  grid-template-areas:
+    "j7 j1 j9 j8"
+    "h3 h5 j2 h4"
+    "h3 h5 j2 h4"
+    "j3 h5 j2 h4"
+    "j4 j6 j5 h4";
+  height: 50%;
+  width: 25%;
+  margin: 0.5em;
+  position: relative;
+  animation: down-swoop 4s ease-in-out;
+}
+.j1 {
+  grid-area: j1;
+  background-color: blue;
+}
+.j2 {
+  grid-area: j2;
+  background-color: blue;
+  box-shadow: 0.25em 0 white;
+}
+.j3 {
+  grid-area: j3;
+  background-color: blue;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.j4 {
+  grid-area: j4;
+  background-color: blue;
+  border-radius: 0 0 0 100%;
+}
+.j5 {
+  grid-area: j5;
+  background-color: blue;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0.25em 0 white;
+}
+.j6 {
+  grid-area: j6;
+  background-color: blue;
+}
+.j7 {
+  grid-area: j7;
+  background-color: blue;
+  border-radius: 100% 0 0 100%;
+}
+.j8 {
+  grid-area: j8;
+  background-color: blue;
+  border-radius: 0 100% 100% 0;
+  box-shadow: 0.25em 0 white;
+}
+.j9 {
+  grid-area: j9;
+  background-color: blue;
+}
+.h3 {
+  grid-area: h3;
+}
+.h4 {
+  grid-area: h4;
+}
+.h5 {
+  grid-area: h5;
+}
+/* "C" Clavell 10vh x 75px*/
+.c {
+  grid-area: c;
+  display: grid;
+  grid-template-areas:
+    "c1 c2 c2 c3"
+    "c4 h6 h6 c5"
+    "c4 h6 h6 h7"
+    "c4 h6 h6 c6"
+    "c7 c8 c8 c9";
+  height: 50%;
+  width: 25%;
+  margin: 0.5em;
+  position: relative;
+  animation: side-swoop 4s ease-in-out;
+}
+.c1 {
+  grid-area: c1;
+  background-color: green;
+  border-radius: 100% 0 0 0;
+}
+.c2 {
+  grid-area: c2;
+  background-color: green;
+}
+.c3 {
+  grid-area: c3;
+  background-color: green;
+  border-radius: 0 100% 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.c4 {
+  grid-area: c4;
+  background-color: green;
+  border-radius: 0 0 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.c5 {
+  grid-area: c5;
+  background-color: green;
+  border-radius: 0 0 100% 100%;
+  box-shadow: 0.25em 0 white;
+}
+.c6 {
+  grid-area: c6;
+  background-color: green;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0.25em 0 white;
+}
+.c7 {
+  grid-area: c7;
+  background-color: green;
+  border-radius: 0 0 0 100%;
+}
+.c8 {
+  grid-area: c8;
+  background-color: green;
+}
+.c9 {
+  grid-area: c9;
+  background-color: green;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0.25em 0 white;
+}
+.h6 {
+  grid-area: h6;
+}
+.h7 {
+  grid-area: h7;
+}
+.img {
+  background-image: url(https://www.publicdomainpictures.net/pictures/300000/velka/degrade-texture-11.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hidden {
+  background-color: transparent;
+}
+.w:hover,
+.j:hover,
+.c:hover {
+  transform: rotate(2turn);
+  transition: 1s ease all;
+}
+
+@keyframes swoop {
+  30% {
+    top: 110%;
+  }
+  50% {
+    top: -110%;
+  }
+  70% {
+    top: 10%;
+  }
+  80% {
+    top: -10%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reverse-swoop {
+  30% {
+    top: -110%;
+  }
+  50% {
+    top: 110%;
+  }
+  70% {
+    top: -10%;
+  }
+  80% {
+    top: 10%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes side-swoop {
+  30% {
+    right: -110%;
+  }
+  50% {
+    right: 110%;
+  }
+  70% {
+    right: -10%;
+  }
+  80% {
+    right: 10%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes reverse-side-swoop {
+  30% {
+    right: 110%;
+  }
+  50% {
+    right: -110%;
+  }
+  70% {
+    right: 10%;
+  }
+  80% {
+    right: -10%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes down-swoop {
+  50% {
+    top: -110%;
+  }
+  80% {
+    top: 10%;
+  }
+  100% {
+    top: 0%;
+  }
+}
