@@ -371,12 +371,6 @@ h1 {
   box-shadow: inset 4px 4px 4px #cbced1, inset -4px -4px 4px#ffffff;
   width: 100%;
 }
-.submit-link {
-  width: 70%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-}
 .submit {
   box-shadow: none;
   background: #dd1010;
