@@ -165,6 +165,7 @@ $darkLight.on("click", () => {
   $darkLight.toggleClass("fa-sun fa-moon");
 });
 
+//dark/light function inspired by https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 //*Dark & Light mode toggle
 const toggleSwitch = document.querySelector(
   '.theme-switch-wrapper input[type="checkbox"]'
