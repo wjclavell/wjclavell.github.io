@@ -152,3 +152,10 @@ const closeMenu = () => {
   });
 };
 closeMenu();
+
+//*back to top scrolling animation
+$(".fa-caret-up").click(function (event) {
+  event.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
