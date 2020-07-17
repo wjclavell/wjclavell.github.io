@@ -46,3 +46,32 @@ const app = (data) => {
     $(".all-projects").append($projBox);
   });
 };
+
+//*change icon from sun to moon on click
+const $darkLight = $(".theme-switch-wrapper label");
+$darkLight.on("click", () => {
+  $darkLight.toggleClass("fa-sun fa-moon");
+});
+
+//*Dark & Light mode toggle
+const toggleSwitch = document.querySelector(
+  '.theme-switch-wrapper input[type="checkbox"]'
+);
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "light");
+    $(".logo img").attr(
+      "src",
+      "https://res.cloudinary.com/wjclavell/image/upload/v1594847186/WC_logo.png"
+    );
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    $(".logo img").attr(
+      "src",
+      "https://res.cloudinary.com/wjclavell/image/upload/v1594847322/WC_logo_red.png"
+    );
+  }
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);

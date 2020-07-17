@@ -1,23 +1,42 @@
+:root {
+  --bgcolor1: #01185e;
+  --bgcolor2: #00093c;
+  --button: #ffffff;
+  --darkfont: #01185e;
+  --lightfont: #ffffff;
+  --red: #dd1010;
+  --shadow: #020516;
+}
+[data-theme="light"] {
+  --bgcolor1: #ffffff;
+  --bgcolor2: #dddddd;
+  --button: #01185e;
+  --darkfont: #00093c;
+  --lightfont: #01185e;
+  --red: #dd1010;
+  --shadow: #b3b3b3;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Francois One", sans-serif;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
 }
 .logo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  color: #00093c;
-  background-color: #eeeeee;
+  color: var(--lightfont);
+  background-color: var(--bgcolor2);
   font-size: 3em;
   text-align: center;
   padding: 0.5rem;
-  box-shadow: -0.5em 0 0.5em 0.5em #020516;
+  box-shadow: -0.5em 0 0.5em 0.5em var(--shadow);
   z-index: 2;
 }
 .logo > h1 {
+  color: var(--lightfont);
   font-size: 1rem;
   letter-spacing: 0.5em;
 }
@@ -28,6 +47,28 @@ body {
 .logo img {
   height: 1em;
 }
+.fa-sun,
+.fa-moon,
+#dark-light {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+#dark-light {
+  display: none;
+}
+.fa-moon {
+  color: #00093c;
+}
+.fa-sun,
+.fa-moon {
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+.fa-sun:hover,
+.fa-moon:hover {
+  color: #dd1010;
+}
 /* All projects page*/
 .all-projects {
   position: relative;
@@ -36,7 +77,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
   margin-bottom: 5em;
 }
 .all-wrapper {
@@ -46,35 +87,35 @@ body {
   align-items: center;
   text-align: center;
   margin: 1em 3em;
-  color: white;
+  color: var(--lightfont);
 }
 p {
   max-width: 30vw;
 }
 a {
-  color: white;
+  color: var(--lightfont);
   text-decoration: none;
 }
 .all-wrapper p {
   margin: 0;
 }
 .all-wrapper h1 {
-  color: #01185e;
+  color: var(--bgcolor1);
   padding: 2px;
-  background-color: white;
+  background-color: var(--button);
   border-radius: 5px;
   box-shadow: 0 4px #dd1010;
 }
 .all-wrapper h1:hover {
-  color: white;
+  color: var(--lightfont);
   background-color: #dd1010;
   box-shadow: none;
 }
 .all-img {
   width: 30vw;
   border: 5px solid #dd1010;
-  box-shadow: 0 0.5em 2em 5px #020516, 0 -0.5em 2em 5px #020516,
-    0.5em 0 2em 5px #020516, -0.5em 0 2em 5px #020516;
+  box-shadow: 0 0.5em 2em 5px var(--shadow), 0 -0.5em 2em 5px var(--shadow),
+    0.5em 0 2em 5px var(--shadow), -0.5em 0 2em 5px var(--shadow);
   transition: 0.5s;
 }
 .all-img:hover {
@@ -87,18 +128,18 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #eeeeee;
+  background-color: var(--bgcolor2);
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 3em;
   margin: 0;
   padding: 0;
-  box-shadow: 0.5em 0 0.5em 0.5em #020516;
+  box-shadow: 0.5em 0 0.5em 0.5em var(--shadow);
 }
 footer h1 {
   font-size: 0.75em;
-  color: #00093c;
+  color: var(--lightfont);
 }
 .icons i {
   transform: scale(1.5);
@@ -107,7 +148,7 @@ footer h1 {
 }
 @media only screen and (max-width: 600px) {
   .all-img {
-    box-shadow: 0 0.25em 1em 3px #020516, 0 -0.25em 1em 3px #020516,
-      0.25em 0 1em 3px #020516, -0.25em 0 1em 3px #020516;
+    box-shadow: 0 0.25em 1em 3px var(--shadow), 0 -0.25em 1em 3px var(--shadow),
+      0.25em 0 1em 3px var(--shadow), -0.25em 0 1em 3px var(--shadow);
   }
 }

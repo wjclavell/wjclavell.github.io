@@ -154,8 +154,8 @@ const closeMenu = () => {
 closeMenu();
 
 //*back to top scrolling animation
-$(".fa-caret-up").click(function (event) {
-  event.preventDefault();
+$(".fa-caret-up").click(function (e) {
+  e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
