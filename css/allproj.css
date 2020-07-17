@@ -48,8 +48,7 @@ body {
   height: 1em;
 }
 .fa-sun,
-.fa-moon,
-#dark-light {
+.fa-moon {
   position: absolute;
   top: 0.5em;
   right: 1em;

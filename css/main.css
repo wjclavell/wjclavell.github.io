@@ -1,3 +1,25 @@
+:root {
+  --bgcolor1: #01185e;
+  --bgcolor2: #00093c;
+  --button: #ffffff;
+  --darkfont: #01185e;
+  --lightfont: #ffffff;
+  --red: #dd1010;
+  --shadow: #020516;
+  --contact1: #040a1b;
+  --contact2: #203881;
+}
+[data-theme="light"] {
+  --bgcolor1: #ffffff;
+  --bgcolor2: #dddddd;
+  --button: #01185e;
+  --darkfont: #00093c;
+  --lightfont: #01185e;
+  --red: #dd1010;
+  --shadow: #b3b3b3;
+  --contact1: #a9a9a9;
+  --contact2: #ffffff;
+}
 body {
   margin: 0;
   padding: 0;
@@ -22,12 +44,12 @@ body {
   top: 0;
   left: 0;
   grid-area: nav;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
   width: 100%;
   height: 3em;
   display: inline-flex;
   justify-content: space-between;
-  box-shadow: 2em 0 3em 1em #020516;
+  box-shadow: 2em 0 3em 1em var(--shadow);
   z-index: 2;
 }
 /* Hamburger menu code inspired by @webdesigntips on Instagram */
@@ -37,8 +59,8 @@ body {
   height: 80vh;
   left: -110%;
   overflow: hidden;
-  background-color: #01185e;
-  box-shadow: -2em 0 3em 2em #020516;
+  background-color: var(--bgcolor1);
+  box-shadow: -2em 0 3em 2em var(--shadow);
   transition: 0.4s;
 }
 .fa-bars {
@@ -49,13 +71,13 @@ body {
   transition: 0.4s;
 }
 .fa-bars:hover {
-  color: white;
+  color: var(--lightfont);
 }
 .logo {
   position: absolute;
   left: 2em;
   top: 1em;
-  color: white;
+  color: var(--lightfont);
   text-decoration: none;
   cursor: pointer;
   font-size: 2em;
@@ -69,7 +91,7 @@ body {
   right: 3em;
   top: 2em;
   padding: 5px 8px;
-  color: white;
+  color: var(--lightfont);
   transform: scale(2);
   cursor: pointer;
   transition: 0.4s;
@@ -84,7 +106,7 @@ body {
 .burger ul li {
   list-style: none;
   padding: 25px 40px;
-  color: white;
+  color: var(--lightfont);
   width: 320px;
   margin-left: -50px;
   opacity: 0;
@@ -99,7 +121,7 @@ body {
   transform: scale(1.5);
 }
 .burger ul li a {
-  color: white;
+  color: var(--lightfont);
   text-decoration: none;
   position: absolute;
   font-size: 1.5em;
@@ -141,7 +163,8 @@ input:checked ~ nav ul li:nth-child(3) {
 input:checked ~ nav ul li:nth-child(4) {
   transition-delay: 0.8s;
 }
-.fa-sun {
+.fa-sun,
+.fa-moon {
   color: white;
   position: absolute;
   top: 1em;
@@ -150,7 +173,11 @@ input:checked ~ nav ul li:nth-child(4) {
   transform: scale(1.5);
   transition: 0.4s;
 }
-.fa-sun:hover {
+.fa-moon {
+  color: #00093c;
+}
+.fa-sun:hover,
+.fa-moon:hover {
   color: #dd1010;
 }
 
@@ -159,7 +186,7 @@ header {
   margin-top: 2em;
   height: 40vh;
   grid-area: head;
-  background: #00093c;
+  background: var(--bgcolor2);
 }
 
 /* welcome message */
@@ -168,10 +195,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00093c;
+  background-color: var(--bgcolor2);
 }
 h1 {
-  color: white;
+  color: var(--lightfont);
   text-align: center;
   margin: 0.75em;
 }
@@ -179,7 +206,7 @@ h1 {
 /* Projects */
 .projects {
   grid-area: proj;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
   padding-bottom: 1em;
 }
 .proj-head {
@@ -204,7 +231,7 @@ h1 {
   font-family: lora;
   font-size: 0.5em;
   text-align: center;
-  color: white;
+  color: var(--lightfont);
   font-style: italic;
   margin: 0;
   margin-bottom: 1em;
@@ -220,11 +247,11 @@ h1 {
   align-items: center;
 }
 .swiper-slide h1 {
-  color: #203881;
+  color: var(--bgcolor1);
   margin: 0;
   margin-top: 0.5em;
   padding: 0 2rem;
-  background-color: white;
+  background-color: var(--button);
   border-radius: 10px;
   box-shadow: 0 4px #dd1010;
 }
@@ -237,7 +264,7 @@ h1 {
   text-decoration: none;
 }
 .swiper-slide p {
-  color: white;
+  color: var(--lightfont);
   text-align: center;
 }
 .project-shown {
@@ -256,7 +283,7 @@ h1 {
 /* About Me */
 .about-me {
   grid-area: am;
-  background-color: #00093c;
+  background-color: var(--bgcolor2);
   padding: 1em;
 }
 .about-flex {
@@ -276,21 +303,21 @@ h1 {
   text-align: center;
   line-height: 2em;
   letter-spacing: 0.15em;
-  color: white;
+  color: var(--lightfont);
 }
 #more {
   display: none;
   transition: 0.3s ease;
 }
 #read-more {
-  color: white;
+  color: var(--lightfont);
   text-align: center;
   background-color: transparent;
   border: none;
   margin: 1em;
 }
 #read-less {
-  color: white;
+  color: var(--lightfont);
   text-align: center;
   background-color: transparent;
   border: none;
@@ -300,7 +327,7 @@ h1 {
 /* My Skills*/
 .my-skills {
   grid-area: skl;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
   padding-bottom: 1em;
 }
 .skill-container {
@@ -313,14 +340,14 @@ h1 {
   width: 35%;
   height: 20%;
   margin: 1em;
-  background-color: #00093c;
+  background-color: var(--bgcolor1);
   border: 2px solid #dd1010;
 }
 
 /* Contact Form */
 #contact-page {
   grid-area: con;
-  background-color: #00093c;
+  background-color: var(--bgcolor2);
 }
 .contact-form {
   display: flex;
@@ -332,7 +359,7 @@ h1 {
   padding: 25px 15px 15px 15px;
   border-radius: 20px;
   background: #ecf0f3;
-  box-shadow: 7px 7px 10px #040a1b, -7px -7px 10px #203881;
+  box-shadow: 7px 7px 10px var(--contact1), -7px -7px 10px var(--contact2);
 }
 #contact-form {
   width: 100%;
@@ -395,7 +422,7 @@ h1 {
 /* Footer */
 footer {
   grid-area: foot;
-  background-color: #01185e;
+  background-color: var(--bgcolor1);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -405,6 +432,7 @@ footer {
 }
 footer h1 {
   font-size: 0.5em;
+  color: var(--lightfont);
 }
 .icons {
   display: flex;
@@ -416,7 +444,7 @@ footer h1 {
   color: #dd1010;
 }
 .fa-caret-up {
-  color: white;
+  color: var(--lightfont);
   transform: scale(2.5);
 }
 
@@ -431,7 +459,8 @@ footer h1 {
   .nav {
     height: 4em;
   }
-  .fa-sun {
+  .fa-sun,
+  .fa-moon {
     top: 1.5em;
     margin: 0 2em;
     transform: scale(2.5);
@@ -483,15 +512,16 @@ footer h1 {
     top: 0;
     left: 0;
     grid-area: nav;
-    background-color: #01185e;
+    background-color: var(--bgcolor1);
     width: 100%;
     height: 5em;
     display: inline-flex;
     justify-content: space-between;
-    box-shadow: 2em 0 3em 1em #020516;
+    box-shadow: 2em 0 3em 1em var(--shadow);
     z-index: 2;
   }
-  .desksun {
+  .fa-sun,
+  .fa-moon {
     margin-top: 0.5em;
   }
   .desklogo {
@@ -519,7 +549,7 @@ footer h1 {
     margin: 0 1em 1em 1em;
   }
   .navbar-list li a {
-    color: white;
+    color: var(--lightfont);
     text-decoration: none;
   }
   header {
