@@ -278,6 +278,7 @@ h1 {
 .swiper-button-prev,
 .swiper-button-next {
   transform: scale(1.2);
+  z-index: 2;
 }
 
 /* About Me */
