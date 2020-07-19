@@ -34,6 +34,7 @@ function readLess() {
     $more.css("display", "none");
   }
 }
+
 //* array of images to populate my skills section
 let skills = [
   "https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png",
@@ -99,7 +100,7 @@ const app = (data) => {
   };
 
   data.forEach((project) => {
-    //*projects slider
+    //*projects slider, used SwiperJS library
     //initialize once data is recieved
     let mySwiper = new Swiper(".swiper-container", {
       //add cube effect and set params
@@ -128,26 +129,28 @@ const app = (data) => {
 
 //*function to automatically close hamburger menu when you choose a link
 const closeMenu = () => {
-  const $link1 = $("#link1");
-  const $link2 = $("#link2");
-  const $link3 = $("#link3");
-  const $link4 = $("#link4");
+  const $burgerLink = $(".nav a");
   const $input = $("input");
 
-  $link1.on("click", () => {
-    $input.prop("checked", false);
-  });
-  $link2.on("click", () => {
-    $input.prop("checked", false);
-  });
-  $link3.on("click", () => {
-    $input.prop("checked", false);
-  });
-  $link4.on("click", () => {
+  $burgerLink.on("click", () => {
     $input.prop("checked", false);
   });
 };
 closeMenu();
+
+//*scroll to page section when chosen, only for navbar not hamburger
+//code inspired by: https://dev.to/attacomsian/smooth-scroll-to-page-section-with-jquery-2jng#:~:text=Here%20is%20a%20little%20jQuery,This%20value%20is%20in%20milliseconds.
+$(document).on("click", '.navbar a[href^="#"]', function (e) {
+  e.preventDefault();
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - 80, //offset by height of the navbar to scroll to correct position
+      },
+      "slow"
+    );
+});
 
 //*back to top scrolling animation
 $(".fa-caret-up").click(function (e) {
@@ -169,11 +172,12 @@ const toggleSwitch = document.querySelector(
 
 function switchTheme(e) {
   if (e.target.checked) {
+    //when checkbox is checked will will switch to light theme
     document.documentElement.setAttribute("data-theme", "light");
     $(".logo img").attr(
       "src",
       "https://res.cloudinary.com/wjclavell/image/upload/v1594847186/WC_logo.png"
-    );
+    ); //change the logo image/color
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
     $(".logo img").attr(
