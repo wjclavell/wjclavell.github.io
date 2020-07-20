@@ -61,7 +61,6 @@ const url =
 fetch(url) //starts fetch process, to get the data
   .then((response) => response.json()) //returns JSON data as a JS object
   .then((data) => {
-    // console.log(data.feed.entry);
     const projects = data.feed.entry.map((entry) => {
       return {
         title: entry.gsx$title.$t,
