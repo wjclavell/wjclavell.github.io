@@ -99,48 +99,48 @@ header {
 }
 .j1 {
   grid-area: j1;
-  background-color: blue;
+  background-color: red;
 }
 .j2 {
   grid-area: j2;
-  background-color: blue;
+  background-color: red;
   box-shadow: 0.25em 0 white;
 }
 .j3 {
   grid-area: j3;
-  background-color: blue;
+  background-color: red;
   border-radius: 100% 100% 0 0;
   box-shadow: 0.25em 0 white;
 }
 .j4 {
   grid-area: j4;
-  background-color: blue;
+  background-color: red;
   border-radius: 0 0 0 100%;
 }
 .j5 {
   grid-area: j5;
-  background-color: blue;
+  background-color: red;
   border-radius: 0 0 100% 0;
   box-shadow: 0.25em 0 white;
 }
 .j6 {
   grid-area: j6;
-  background-color: blue;
+  background-color: red;
 }
 .j7 {
   grid-area: j7;
-  background-color: blue;
+  background-color: red;
   border-radius: 100% 0 0 100%;
 }
 .j8 {
   grid-area: j8;
-  background-color: blue;
+  background-color: red;
   border-radius: 0 100% 100% 0;
   box-shadow: 0.25em 0 white;
 }
 .j9 {
   grid-area: j9;
-  background-color: blue;
+  background-color: red;
 }
 .h3 {
   grid-area: h3;
@@ -169,49 +169,49 @@ header {
 }
 .c1 {
   grid-area: c1;
-  background-color: green;
+  background-color: red;
   border-radius: 100% 0 0 0;
 }
 .c2 {
   grid-area: c2;
-  background-color: green;
+  background-color: red;
 }
 .c3 {
   grid-area: c3;
-  background-color: green;
+  background-color: red;
   border-radius: 0 100% 0 0;
   box-shadow: 0.25em 0 white;
 }
 .c4 {
   grid-area: c4;
-  background-color: green;
+  background-color: red;
   border-radius: 0 0 0 0;
   box-shadow: 0.25em 0 white;
 }
 .c5 {
   grid-area: c5;
-  background-color: green;
+  background-color: red;
   border-radius: 0 0 100% 100%;
   box-shadow: 0.25em 0 white;
 }
 .c6 {
   grid-area: c6;
-  background-color: green;
+  background-color: red;
   border-radius: 100% 100% 0 0;
   box-shadow: 0.25em 0 white;
 }
 .c7 {
   grid-area: c7;
-  background-color: green;
+  background-color: red;
   border-radius: 0 0 0 100%;
 }
 .c8 {
   grid-area: c8;
-  background-color: green;
+  background-color: red;
 }
 .c9 {
   grid-area: c9;
-  background-color: green;
+  background-color: red;
   border-radius: 0 0 100% 0;
   box-shadow: 0.25em 0 white;
 }
