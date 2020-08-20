@@ -222,7 +222,7 @@ header {
   grid-area: h7;
 }
 .img {
-  background-image: url(https://www.publicdomainpictures.net/pictures/300000/velka/degrade-texture-11.jpg);
+  background-image: url(https://res.cloudinary.com/wjclavell/image/upload/v1597948361/red_1_yeigtj.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
