@@ -1,6 +1,6 @@
 :root {
-  --bgcolor1: #01185e;
-  --bgcolor2: #00093c;
+  --bgcolor1: #202020;
+  --bgcolor2: #0e1120;
   --button: #ffffff;
   --darkfont: #01185e;
   --lightfont: #ffffff;
@@ -19,6 +19,15 @@
   --shadow: #b3b3b3;
   --contact1: #a9a9a9;
   --contact2: #ffffff;
+}
+@font-face {
+  font-family: "cascadia_code";
+  src: url("../webfontkit-20200929-161207/cascadiacode-webfont.woff2")
+      format("woff2"),
+    url("../webfontkit-20200929-161207/cascadiacode-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   margin: 0;
@@ -299,16 +308,22 @@ h1 {
   border-radius: 100%;
 }
 #about-p {
-  font-family: lora;
+  font-family: cascadia_code;
   margin: 0 1em;
-  text-align: center;
-  line-height: 2em;
+  text-align: left;
+  line-height: 1.5em;
   letter-spacing: 0.15em;
   color: var(--lightfont);
 }
 #more {
   display: none;
   transition: 0.3s ease;
+}
+#more strong {
+  color: #dd1010;
+}
+#resume {
+  color: #dd1010;
 }
 #read-more {
   color: var(--lightfont);
@@ -338,11 +353,11 @@ h1 {
   align-items: center;
 }
 .skill-container img {
-  width: 35%;
+  width: 75px;
   height: 20%;
   margin: 1em;
   background-color: var(--bgcolor1);
-  border: 2px solid #dd1010;
+  /* border: 2px solid #dd1010; */
 }
 
 /* Contact Form */
@@ -376,7 +391,7 @@ h1 {
 [name="phone"] {
   border: none;
   outline: none;
-  background: none;
+  background: white;
   padding: 0.25em 0 0 1em;
   font-size: 1em;
   color: #555555;
@@ -385,7 +400,7 @@ h1 {
 #contact-form textarea {
   border: none;
   outline: none;
-  background: none;
+  background: white;
   padding: 0.25em 0 0 1em;
   font-size: 1em;
   color: #555555;
@@ -412,6 +427,7 @@ h1 {
   display: flex;
   justify-content: center;
   box-shadow: 0px 4px 4px #720909;
+  -webkit-appearance: none;
 }
 .submit:hover {
   cursor: pointer;
@@ -479,8 +495,8 @@ footer h1 {
     margin: 0 auto;
   }
   .skill-container img {
-    width: 15vw;
-    border: 5px solid #dd1010;
+    width: 100px;
+    /* border: 2px solid #dd1010; */
   }
   .proj-head {
     margin-top: 0.75em;
@@ -597,7 +613,7 @@ footer h1 {
     width: 15%;
     height: 15%;
     margin: 1em;
-    border: 5px solid #dd1010;
+    /* border: 3px solid #dd1010; */
   }
   footer {
     height: 5em;
