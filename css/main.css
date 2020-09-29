@@ -6,8 +6,8 @@
   --lightfont: #ffffff;
   --red: #dd1010;
   --shadow: #020516;
-  --contact1: #040a1b;
-  --contact2: #203881;
+  --contact1: #000000;
+  --contact2: #2b335e;
 }
 [data-theme="light"] {
   --bgcolor1: #ffffff;
@@ -351,6 +351,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 0 2em;
 }
 .skill-container img {
   width: 75px;
@@ -371,7 +372,7 @@ h1 {
   align-items: center;
   margin: 1em auto;
   width: 80vw;
-  height: 70vh;
+  height: 50vh;
   padding: 25px 15px 15px 15px;
   border-radius: 20px;
   background: #ecf0f3;
@@ -391,21 +392,23 @@ h1 {
 [name="phone"] {
   border: none;
   outline: none;
-  background: white;
+  background: none;
   padding: 0.25em 0 0 1em;
   font-size: 1em;
   color: #555555;
   height: 2em;
+  -webkit-appearance: none;
 }
 #contact-form textarea {
   border: none;
   outline: none;
-  background: white;
+  background: none;
   padding: 0.25em 0 0 1em;
   font-size: 1em;
   color: #555555;
   max-height: 5em;
   max-width: 100%;
+  -webkit-appearance: none;
 }
 .form-control {
   align-items: center;
@@ -503,6 +506,9 @@ footer h1 {
   }
   .projects > p {
     font-size: 0.75em;
+  }
+  .contact-form {
+    width: 50vw;
   }
   .icons i {
     transform: scale(2);
@@ -620,5 +626,8 @@ footer h1 {
   }
   .icons i {
     padding: 0 1em;
+  }
+  .contact-form {
+    width: 50vw;
   }
 }
