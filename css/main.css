@@ -5,7 +5,7 @@
   --darkfont: #01185e;
   --lightfont: #ffffff;
   --red: #dd1010;
-  --shadow: #020516;
+  --shadow: #0e1122;
   --contact1: #000000;
   --contact2: #2b335e;
 }
@@ -237,11 +237,10 @@ h1 {
   text-decoration-color: #dd1010;
 }
 .projects > p {
-  font-family: lora;
+  font-family: cascadia_code;
   font-size: 0.5em;
   text-align: center;
   color: var(--lightfont);
-  font-style: italic;
   margin: 0;
   margin-bottom: 1em;
 }
@@ -256,21 +255,30 @@ h1 {
   align-items: center;
 }
 .swiper-slide h1 {
-  color: var(--bgcolor1);
+  font-family: cascadia_code;
+  color: var(--red);
   margin: 0;
   margin-top: 0.5em;
   padding: 0 2rem;
-  background-color: var(--button);
-  border-radius: 10px;
-  box-shadow: 0 4px #dd1010;
 }
-.swiper-slide h1:hover {
-  background-color: #dd1010;
+.proj-links {
+  display: flex;
+  justify-content: center;
+}
+.proj-links button {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em;
+  padding: 0.5em;
+  color: var(--lightfont);
+  background: none;
+  border: 2px solid #dd1010;
+  transition: 0.7s ease;
+}
+.proj-links button:hover {
   color: white;
-  box-shadow: none;
-}
-.swiper-slide a {
-  text-decoration: none;
+  background-color: #dd1010;
+  border-radius: 25px;
 }
 .swiper-slide p {
   color: var(--lightfont);
@@ -371,6 +379,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 1em auto;
+  margin-bottom: 4em;
   width: 80vw;
   height: 50vh;
   padding: 25px 15px 15px 15px;
@@ -466,6 +475,8 @@ footer h1 {
 .fa-caret-up {
   color: var(--lightfont);
   transform: scale(2.5);
+  position: relative;
+  left: 2em;
 }
 
 /* media queries for tablet and desktop*/

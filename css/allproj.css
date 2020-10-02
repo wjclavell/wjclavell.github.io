@@ -5,7 +5,7 @@
   --darkfont: #01185e;
   --lightfont: #ffffff;
   --red: #dd1010;
-  --shadow: #020516;
+  --shadow: #0e1122;
 }
 [data-theme="light"] {
   --bgcolor1: #ffffff;
@@ -15,6 +15,15 @@
   --lightfont: #01185e;
   --red: #dd1010;
   --shadow: #b3b3b3;
+}
+@font-face {
+  font-family: "cascadia_code";
+  src: url("../webfontkit-20200929-161207/cascadiacode-webfont.woff2")
+      format("woff2"),
+    url("../webfontkit-20200929-161207/cascadiacode-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   margin: 0;
@@ -32,7 +41,7 @@ body {
   font-size: 3em;
   text-align: center;
   padding: 0.5rem;
-  box-shadow: -0.5em 0 0.5em 0.5em var(--shadow);
+  box-shadow: -0.25em 0 0.75em 0.25em var(--shadow);
   z-index: 2;
 }
 .logo > h1 {
@@ -89,36 +98,44 @@ body {
   color: var(--lightfont);
 }
 p {
-  max-width: 30vw;
-}
-a {
-  color: var(--lightfont);
-  text-decoration: none;
+  max-width: 70vw;
 }
 .all-wrapper p {
   margin: 0;
 }
 .all-wrapper h1 {
-  color: var(--bgcolor1);
-  padding: 2px;
-  background-color: var(--button);
-  border-radius: 5px;
-  box-shadow: 0 4px #dd1010;
-}
-.all-wrapper h1:hover {
+  font-family: cascadia_code;
   color: var(--lightfont);
-  background-color: #dd1010;
-  box-shadow: none;
+  padding: 2px;
+  margin: 0;
 }
 .all-img {
-  width: 30vw;
+  width: 70vw;
   border: 5px solid #dd1010;
-  box-shadow: 0 0.5em 2em 5px var(--shadow), 0 -0.5em 2em 5px var(--shadow),
-    0.5em 0 2em 5px var(--shadow), -0.5em 0 2em 5px var(--shadow);
   transition: 0.5s;
 }
 .all-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.proj-links {
+  display: flex;
+  justify-content: center;
+}
+.proj-links button {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: var(--lightfont);
+  background: none;
+  border: 2px solid #dd1010;
+  transition: 0.7s ease;
+}
+.proj-links button:hover {
+  color: white;
+  background-color: #dd1010;
+  border-radius: 25px;
 }
 
 /* Footer */
@@ -134,7 +151,7 @@ footer {
   height: 3em;
   margin: 0;
   padding: 0;
-  box-shadow: 0.5em 0 0.5em 0.5em var(--shadow);
+  box-shadow: 0.25em 0 0.75em 0.25em var(--shadow);
 }
 footer h1 {
   font-size: 0.75em;

@@ -75,6 +75,7 @@ fetch(url) //starts fetch process, to get the data
         image: entry.gsx$image.$t,
         description: entry.gsx$description.$t,
         url: entry.gsx$url.$t,
+        code: entry.gsx$github.$t,
         category: entry.gsx$category.$t,
         featured: entry.gsx$featured.$t,
       };
@@ -88,9 +89,12 @@ const app = (data) => {
     if (project.featured === "TRUE") {
       const $projBox = $(`<div class="swiper-slide">
     <div class="proj-head">
-      <a href="${project.url}"
-        ><h1>${project.title}</h1></a
-      >
+      <h1>${project.title}</h1>
+      <div class="proj-links"><a href="${project.url}"
+      ><button id="live">Deployed site</button></a
+      ><a href="${project.code}"
+      ><button id="code">See the code</button></a
+      ></div>
       <p>
         ${project.description}
       </p>
@@ -111,18 +115,13 @@ const app = (data) => {
     //initialize once data is recieved
     let mySwiper = new Swiper(".swiper-container", {
       //add cube effect and set params
-      effect: "cube",
+      speed: 400,
+      effect: "coverflow",
       grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 15,
-        shadowScale: 0.74,
-      },
-      //show pagination dots
-      pagination: {
-        el: ".swiper-pagination",
-      },
+      // //show pagination dots
+      // pagination: {
+      //   el: ".swiper-pagination",
+      // },
       //show buttons
       navigation: {
         nextEl: ".swiper-button-next",

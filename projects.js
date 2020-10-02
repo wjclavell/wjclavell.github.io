@@ -12,6 +12,7 @@ fetch(url) //starts fetch process, to get the data
         image: entry.gsx$image.$t,
         description: entry.gsx$description.$t,
         url: entry.gsx$url.$t,
+        code: entry.gsx$github.$t,
         category: entry.gsx$category.$t,
         featured: entry.gsx$featured.$t,
       };
@@ -28,9 +29,15 @@ const app = (data) => {
     <img
       class="all-img"
       src="${project.image}"
-  /></a><a href="${project.url}"
-      ><h1>${project.title}</h1></a
+  /></a>
+  <h1>${project.title}</h1>
+  <div class="proj-links">
+    <a href="${project.url}"
+    ><button id="live">Deployed site</button></a
+    ><a href="${project.code}"
+    ><button id="code">See the code</button></a
     >
+  </div>
     <p>
       ${project.description}
     </p>
