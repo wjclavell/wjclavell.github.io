@@ -41,13 +41,13 @@ body {
   font-size: 3em;
   text-align: center;
   padding: 0.5rem;
-  box-shadow: -0.25em 0 0.75em 0.25em var(--shadow);
   z-index: 2;
 }
 .logo > h1 {
   color: var(--lightfont);
   font-size: 1rem;
   letter-spacing: 0.5em;
+  margin: 0;
 }
 .logo > a {
   font-weight: 800;
@@ -95,6 +95,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 1em 3em;
+  margin-bottom: 2em;
   color: var(--lightfont);
 }
 p {
@@ -111,6 +112,7 @@ p {
 }
 .all-img {
   width: 70vw;
+  max-width: 600px;
   border: 5px solid #dd1010;
   transition: 0.5s;
 }
@@ -151,7 +153,6 @@ footer {
   height: 3em;
   margin: 0;
   padding: 0;
-  box-shadow: 0.25em 0 0.75em 0.25em var(--shadow);
 }
 footer h1 {
   font-size: 0.75em;
@@ -161,10 +162,4 @@ footer h1 {
   transform: scale(1.5);
   color: #dd1010;
   margin: 0 0.5em;
-}
-@media only screen and (max-width: 600px) {
-  .all-img {
-    box-shadow: 0 0.25em 1em 3px var(--shadow), 0 -0.25em 1em 3px var(--shadow),
-      0.25em 0 1em 3px var(--shadow), -0.25em 0 1em 3px var(--shadow);
-  }
 }
