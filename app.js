@@ -180,16 +180,10 @@ function switchTheme(e) {
   if (e.target.checked) {
     //when checkbox is checked will will switch to light theme
     document.documentElement.setAttribute("data-theme", "light");
-    $(".logo img").attr(
-      "src",
-      "https://res.cloudinary.com/wjclavell/image/upload/v1594847186/WC_logo.png"
-    ); //change the logo image/color
+    $(".logo img").attr("src", "./assets/WC_logo.svg"); //change the logo image/color
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
-    $(".logo img").attr(
-      "src",
-      "https://res.cloudinary.com/wjclavell/image/upload/v1594847322/WC_logo_red.png"
-    );
+    $(".logo img").attr("src", "./assets/WC_logo_red.svg");
   }
 }
 
